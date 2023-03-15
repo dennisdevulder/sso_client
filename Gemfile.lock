@@ -1,11 +1,18 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    debug (1.7.1)
+      irb (>= 1.5.0)
+      reline (>= 0.3.1)
+    dotenv (2.8.1)
     faraday (2.7.4)
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
     hashie (5.0.0)
+    io-console (0.6.0)
+    irb (1.6.3)
+      reline (>= 0.3.0)
     jwt (2.7.0)
     multi_xml (0.6.0)
     mustermann (3.0.0)
@@ -20,6 +27,8 @@ GEM
     rack (2.2.6.4)
     rack-protection (3.0.5)
       rack
+    reline (0.3.2)
+      io-console (~> 0.5)
     ruby2_keywords (0.0.5)
     sinatra (3.0.5)
       mustermann (~> 3.0)
@@ -36,6 +45,8 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
+  debug
+  dotenv
   oauth2
   sinatra
 
